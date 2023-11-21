@@ -1,74 +1,73 @@
-# Conversion Web App Template
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Konversions-Web-App-Vorlage
+Dies ist ein [Next.js](https://nextjs.org/) Projekt, initialisiert mit [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Config App
-Create a file named `.env.local` in the current directory and copy the contents from `.env.example`. Setting the following content:
+## App Konfigurieren
+Erstelle eine Datei namens `.env.local` im aktuellen Verzeichnis und kopiere den Inhalt aus `.env.example`. Setze den folgenden Inhalt:
 ```
 # APP ID
 NEXT_PUBLIC_APP_ID=
-# APP API key
+# APP API Schlüssel
 NEXT_PUBLIC_APP_KEY=
 ```
 
-Config more in `config/index.ts` file:   
+Weitere Konfigurationen in der Datei `config/index.ts`:   
 ```js
 export const APP_INFO: AppInfo = {
-  title: 'Chat APP',
-  description: '',
-  copyright: '',
-  privacy_policy: '',
-  default_language: 'zh-Hans'
+  titel: 'Chat APP',
+  beschreibung: '',
+  urheberrecht: '',
+  datenschutzrichtlinie: '',
+  standard_sprache: 'zh-Hans'
 }
 
 export const isShowPrompt = true
 export const promptTemplate = ''
 ```
 
-## Getting Started
-First, install dependencies:
+## Erste Schritte
+Zuerst, installiere Abhängigkeiten:
 ```bash
 npm install
-# or
+# oder
 yarn
-# or
+# oder
 pnpm install
 ```
 
-Then, run the development server:
+Dann starte den Entwicklungsserver:
 
 ```bash
 npm run dev
-# or
+# oder
 yarn dev
-# or
+# oder
 pnpm dev
 ```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Öffne [http://localhost:3000](http://localhost:3000) in deinem Browser, um das Ergebnis zu sehen.
 
-## Using Docker
+## Mit Docker verwenden
 
 ```
 docker build . -t <DOCKER_HUB_REPO>/webapp-conversation:latest
-# now you can access it in port 3000
+# jetzt kannst du es auf Port 3000 zugreifen
 docker run -p 3000:3000 <DOCKER_HUB_REPO>/webapp-conversation:latest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Öffne [http://localhost:3000](http://localhost:3000) in deinem Browser, um das Ergebnis zu sehen.
 
-## Learn More
+## Mehr Erfahren
 
-To learn more about Next.js, take a look at the following resources:
+Um mehr über Next.js zu erfahren, sieh dir die folgenden Ressourcen an:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Dokumentation](https://nextjs.org/docs) - erfahre mehr über Next.js Funktionen und API.
+- [Next.js lernen](https://nextjs.org/learn) - ein interaktives Next.js Tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Du kannst auch [das Next.js GitHub-Repository](https://github.com/vercel/next.js/) besuchen - dein Feedback und Beiträge sind willkommen!
 
-## Deploy on Vercel
+## Auf Vercel deployen
 
-> ⚠️ If you are using [Vercel Hobby](https://vercel.com/pricing), your message will be trucated due to the limitation of vercel.
+> ⚠️ Wenn du [Vercel Hobby](https://vercel.com/pricing) verwendest, wird deine Nachricht aufgrund der Vercel-Beschränkung gekürzt.
 
+Die einfachste Art, deine Next.js-App zu deployen, ist die Verwendung der [Vercel-Plattform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) von den Schöpfern von Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Sieh dir unsere [Next.js-Deployment-Dokumentation](https://nextjs.org/docs/deployment) für weitere Details an.
